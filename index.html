@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>hey_applesell</title>
+    
+</head>
+<body>
+   <header>
+    <div class="overlay"></div>
+   <nav>
+<!--------------------SECCION MENU ------------------------>
+    <div id="contenedor_menu">
+
+        <div id="contenedor_hijo_menu">
+
+            <div id="contenedor_menu_logo">
+                <div id="logo_menu">
+                  <img src="./assets/img/logo.jpg" alt="Logo de hey_applesell" class="logo">
+                </div>
+           </div>
+
+           <div class="contenedor_paginas">
+                <a href="#" class="enlace"><p class="pagina"> INICIO </p> </a>
+                <a href="#about_us" class="enlace"><P class="pagina"> ABOUT US </P> </a>
+                <a href="#productos" class="enlace"> <P class="pagina"> PRODUCTOS </P> </a>
+                <a href="#contacts" class="enlace"><P class="pagina"> CONTACTO </P> </a>
+           </div>
+           <div class="icono_menu_desplegable">
+            <div class="desplegable_linea desplegable_linea_uno"></div>
+            <div class="desplegable_linea desplegable_linea_dos"></div>
+            <div class="desplegable_linea desplegable_linea_tres"></div>
+         </div>
+         <div class="icono_carrito">
+          <img src="assets/img/carrito-de-compras.png" alt="carrito de compras">
+          <div class="carrito_bubble">0</div>
+         </div>
+        </div>
+
+        <!------------------------CARRITO DE COMPRAS------------------------>
+        <div class="carrito">
+           <h3>Resumen de compras</h3>
+           <hr>
+           <div class="carrito_contenedor">
+           </div>
+             <div class="carrito_total">
+              <p>Total</p>
+              
+              <span class="total"> 0 </span>
+            </div>
+            <hr>
+            <button class="boton_comprar">Comprar</button>
+            <button class="boton_borrar">Borrar</button> 
+          
+        </div>
+    </div>
+</nav>
+
+   </header>
+    <main>
+
+      <!-------------------------------SECCION HERO -------------------------------->
+      <div id="hero">
+        
+        <div class="container-slider">
+            <div class="slider-izquierda">
+              <img src="assets/img/slideshow/izquierda.png" alt="">
+            </div>
+            <div class="slider-screen">
+              <img name="imagen" alt="imagen de slide">
+            </div>
+            <div class="slider-derecha">
+              <img src="assets/img/slideshow/derecha.png" alt="">
+            </div>
+            
+        </div>
+      </div>
+
+
+      <div id="about_us">
+        <h1>Somos hey_applesell</h1>
+        <p> somo het_applesell una empresa creada en hace mas de 10 años 
+          ya instalados en 3 provicias de la argentina con sede original en santa fe
+          le brindamos el mejor servicio de entrega a nuesros mas de 3 mil clientes en todo el pais 
+          siempre apostamos a la inovacion tecnogica dentro del campo de la informatica lo dicen nuesros partners.
+        </p>
+        <div class="imgs">
+          <img src="assets/img/partners/1.png" alt="">
+        <img src="assets/img/partners/2.png" alt="">
+        <img src="assets/img/partners/3.png" alt="">
+        <img src="assets/img/partners/4.png" alt="">
+        <img src="assets/img/partners/5.png" alt="">
+        </div>
+
+      </div>
+
+      <!---------------------SECCION PRODUCTOS -------------------------->
+
+      <section id="productos">
+        <h1>Productos</h1>
+
+        <!-------------------FILTROS-------------------------->
+
+
+        <div class="categories">
+          <button class="category active">Todas</button>
+          <button class="category" data-category="notebooks">Notebooks</button>
+          <button class="category" data-category="Placas de video">Placas de video</button>
+          <button class="category" data-category="Smartphones">Telefonos inteligentas</button>
+          
+        </div>
+
+          <div class="contenedor_productos">
+            
+            
+           </div>
+           <div class="add_modal"></div>
+           <button class="boton_cargar"> Ver +</button>
+           
+      </section>
+      
+    </main>
+    <section id="contacts">
+      <h1> Nuestros Contactos </h1>
+<div class="contacts_info">
+  <div class="contact_box1">
+      <h2>Buscanos En</h2>
+      <ul>
+          <li><i class="fa-solid fa-location-dot"></i><a href="">San Martin 202</a> </li>
+          <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+5403514982257">Telefono de contacto</a></li>
+          <li><i class="fa-solid fa-at"></i><a href="mailto:spartanmk05@gmail.com" target="_blank">Nuestro Correo</a></li>
+      </ul>
+  </div>
+  <div class="contact_box2">
+      <h2>Registrate</h2>
+      <div class="content_form">
+
+       <form  class="form_container" id="registrar" >
+       
+        
+          <!---nombre-->
+        <div class="baliza">
+          <input type="text" placeholder="Nombre" class="form_input_name" id="nombre" />
+          <small></small>
+          </div>
+          
+         <!-- apellido-->
+         <div class="baliza"> 
+          <input type="text" placeholder="Apellido" class="form_input_apellido" id="apellido" />
+          <small></small>
+        </div>
+          
+        <!--numero de telefono-->
+        <div class="baliza">
+          <input type="text" placeholder="Telefono" class="form_input_telefono" id="telefono" />
+          <small></small>
+        </div>
+          
+        <!-- email -->
+        <div class="baliza">
+          <input type="email" placeholder="Correo" class="form_input_email" id="email" />
+          <small></small>
+        </div>
+        <input type="submit" class="form__submit__btn" value="registrarse"/>
+       
+      
+       </form>
+
+      </div>
+  </div>
+       <!-- redes sociales -->
+  <div class="redes">
+      <h2>Nuestras Redes</h2>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-instagram"></i>
+  </div>
+</div>
+  </section>
+  </main> 
+  <footer>
+      <div class="footer">
+          <img src="assets/img/logo de ph productions.png" alt="">
+          <h2>Producido por ph productions</h2>
+      </div>
+  </footer> 
+  
+    <script src="./assets/data.js"></script>
+    <script src="./assets/slider.js"></script>
+    <script src="./assets/navbar.js"></script>
+    <script src="./assets/script.js"></script>
+    <script src="./assets/filtros.js"></script>
+    <script src="./assets/formulario.js"></script>
+</body>
+</html>
